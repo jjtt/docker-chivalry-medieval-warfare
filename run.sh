@@ -20,6 +20,7 @@ function install-chivalry {
     "/opt/chivalry/steamcmd/steamcmd.sh" +login anonymous +force_install_dir "/opt/chivalry/server" +app_update 220070 +quit
     if [ ! -L "/opt/chivalry/server/Binaries/Linux/lib/steamclient.so" ]; then
         ln -s "/opt/chivalry/steamcmd/linux32/steamclient.so" "/opt/chivalry/server/Binaries/Linux/lib/steamclient.so"
+        ln -s "/opt/chivalry/steamcmd/linux32/steamclient.so" "/opt/chivalry/steamcmd/linux32/steamservice.so"
     fi
 
     if [ ! -f "/opt/chivalry/server/Binaries/Linux/steam_appid.txt" ]; then
