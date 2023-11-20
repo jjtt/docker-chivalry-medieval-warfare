@@ -22,6 +22,7 @@
 * mods / workshop items can be changed reliable
 
 ## known issues
+* server gets stuck on map changes (https://github.com/jjtt/docker-chivalry-medieval-warfare/issues/4)
 * scripts can be optimized
 
 
