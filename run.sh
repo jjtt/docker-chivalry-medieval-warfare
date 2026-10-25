@@ -17,7 +17,7 @@ function install-steamcmd {
 
 function install-chivalry {
     echo "Updating/Installing game files"
-    "/opt/chivalry/steamcmd/steamcmd.sh" +login anonymous +force_install_dir "/opt/chivalry/server" +app_update 220070 +quit
+    "/opt/chivalry/steamcmd/steamcmd.sh" +force_install_dir "/opt/chivalry/server" +login anonymous +app_update 220070 +quit
     if [ ! -L "/opt/chivalry/server/Binaries/Linux/lib/steamclient.so" ]; then
         ln -s "/opt/chivalry/steamcmd/linux32/steamclient.so" "/opt/chivalry/server/Binaries/Linux/lib/steamclient.so"
         ln -s "/opt/chivalry/steamcmd/linux32/steamclient.so" "/opt/chivalry/steamcmd/linux32/steamservice.so"
